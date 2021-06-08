@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "878310172108",
+    "project_id": "find-my-session",
+    "storage_bucket": "find-my-session.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878310172108:android:cfc8a54f94a0e60bfbe969",
+        "android_client_info": {
+          "package_name": "com.android.findmyvaccine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878310172108-8odhf7o4acpoolcb2656irrkg8tmrque.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.findmyvaccine",
+            "certificate_hash": "6e5275d3ffba9015fe45cc6ab896bc25f1a13405"
+          }
+        },
+        {
+          "client_id": "878310172108-7hfdcfe27agr547bgu3obnp4chjgqdf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNZc052Q9O8LeMWNuOR7sRX8IaeLgNkRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878310172108-7hfdcfe27agr547bgu3obnp4chjgqdf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
