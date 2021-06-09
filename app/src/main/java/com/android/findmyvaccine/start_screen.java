@@ -17,6 +17,6 @@ public class start_screen extends AppCompatActivity {
         handler.postDelayed(() -> {
             Intent intent = new Intent(start_screen.this, MainActivity.class);
             startActivity(intent);
-        },1500);
+        },800);
     }
 }

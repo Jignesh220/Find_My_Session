@@ -6,120 +6,107 @@
     android:background="@drawable/background"
     android:textAlignment="center"
     android:padding="10dp"
-    android:layout_marginBottom="30dp"
+    android:layout_marginBottom="50dp"
     android:id="@+id/colorChange"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="5dp"
-        >
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="05"
-            android:fontFamily="@font/molengo"
-            android:text="City:" />
-        <TextView
-            android:id="@+id/cityName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="city_name"
-            android:layout_weight="1"
-            android:layout_marginStart="10dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:text="City:"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="25dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="5dp"
-        >
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/maven_pro_medium"
+        android:text="city_name"
+        android:textSize="20sp" />
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="center:"
+            android:textSize="10sp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/maven_pro_medium"
             />
         <TextView
             android:id="@+id/centerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="center name"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro_medium"
             />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="5dp"
-        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Address:"
+            android:textSize="10sp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/maven_pro_medium"
             />
         <TextView
             android:id="@+id/centerAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="center Add"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro_medium"
             />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="5dp"
-        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Timing:"
+            android:textSize="10sp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/maven_pro_medium"
             />
         <TextView
             android:id="@+id/vaccineTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="timing "
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro_medium"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="5dp"
-        >
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="vaccine Name:"
+            android:textSize="10sp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/maven_pro_medium"
             />
         <TextView
             android:id="@+id/vaccineName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vaccine Name"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/maven_pro_medium"
             />
-    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -137,7 +124,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="age limit"/>
+                android:text="age limit"
+                android:textSize="10sp"
+                android:fontFamily="@font/maven_pro_medium"
+                />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,6 +139,7 @@
                     android:layout_height="wrap_content"
                     android:text="45+"
                     android:textSize="20sp"
+                    android:fontFamily="@font/maven_pro_medium"
 
                     />
                 <TextView
@@ -156,7 +147,8 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:textSize="20sp"
-                    android:layout_marginEnd="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/maven_pro_medium"
                     />
             </LinearLayout>
 
@@ -166,13 +158,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
+            android:layout_marginEnd="30dp"
 
             >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Fee type:"
+                android:textSize="10sp"
+                android:fontFamily="@font/maven_pro_medium"
                 />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -184,8 +178,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="fee "
-                    android:layout_marginStart="10dp"
                     android:textSize="19sp"
+                    android:fontFamily="@font/maven_pro_medium"
+
                     />
             </LinearLayout>
 
@@ -203,14 +198,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Available Dose 1"
+                android:fontFamily="@font/maven_pro_medium"
+                android:textSize="10sp"
                 />
             <TextView
                 android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:layout_marginStart="10dp"
+
                 android:textSize="19sp"
+                android:fontFamily="@font/maven_pro_medium"
 
                 />
         </LinearLayout>
