@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        JsonObjectRequest jsonArrayRequest = new JsonObjectRequest(Request.Method.GET, urlLink, null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, urlLink, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
 
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        requestQueue.add(jsonArrayRequest);
+        requestQueue.add(jsonObjectRequest);
     }
 
     private void closeKeyboard() {
