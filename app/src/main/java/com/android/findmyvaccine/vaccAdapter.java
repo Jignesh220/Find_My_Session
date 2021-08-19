@@ -52,14 +52,14 @@ public class vaccAdapter extends ArrayAdapter<vaccine> {
 
         timing.setText(vaccine.getTime());
 
-        GradientDrawable magnitudeCircle = (GradientDrawable) linearLayout.getBackground();
-        int DoseColor = getMagnitudeColor(vaccine.getStatus());
-        magnitudeCircle.setColor(DoseColor);
+        GradientDrawable DoseCircle = (GradientDrawable) linearLayout.getBackground();
+        int DoseColor = getDoseColor(vaccine.getStatus());
+        DoseCircle.setColor(DoseColor);
 
         return convertView;
     }
 
-    private int getMagnitudeColor(String dose) {
+    private int getDoseColor(String dose) {
         int doseColorResourceId;
 
         if(dose.equals("0")){

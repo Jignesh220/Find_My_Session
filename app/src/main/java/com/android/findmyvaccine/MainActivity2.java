@@ -33,7 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
     private EditText pinCode;
     private EditText edate;
     private Button findInfo;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         pinCode = findViewById(R.id.pinCode);
         edate = findViewById(R.id.get_date);
@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 String gDate = edate.getText().toString();
 
                 if (TextUtils.isEmpty(gPinCode)) {
-                    Toast.makeText(MainActivity.this, "please enter pin code!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity2.this, "please enter pin code!!", Toast.LENGTH_LONG).show();
                     return;
                 }
                 if (gPinCode.length() != 6) {
-                    Toast.makeText(MainActivity.this, "please enter valid pin code!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity2.this, "please enter valid pin code!!", Toast.LENGTH_LONG).show();
                     return;
                 }
                 getAppointment(gPinCode, gDate);
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     progressBar.setVisibility(View.INVISIBLE);
                     JSONArray centers = response.getJSONArray("sessions");
                     if (centers.length() == 0) {
-                        Toast.makeText(MainActivity.this, "No centers available", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity2.this, "No centers available", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         String vaccName = centerObject.getString("vaccine");
                         String feeType = centerObject.getString("fee_type");
                         String ageLimit = centerObject.getString("min_age_limit");
-                        String avalible = centerObject.getString("available_capacity_dose1");
+                        String avalible = centerObject.getString("available_capacity_dose2");
                         String address = centerObject.getString("address");
 
 
@@ -117,11 +117,11 @@ public class MainActivity extends AppCompatActivity {
                         vaccines.add(v1);
                         ArrayList<vaccine> vaccinesRegis = vaccines;
 
-                        vaccAdapter vaccAdapter=new vaccAdapter(MainActivity.this, vaccinesRegis);
+                        vaccAdapter vaccAdapter=new vaccAdapter(MainActivity2.this, vaccinesRegis);
 
                         display.setAdapter(vaccAdapter);
                     }
-                    Toast.makeText(MainActivity.this,"session added \nEnd of the list",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity2.this,"session added \nEnd of the list",Toast.LENGTH_LONG).show();
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.d("appData", "Something went wrong");
-                Toast.makeText(MainActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity2.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
 
             }
         });

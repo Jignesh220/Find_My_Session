@@ -15,7 +15,7 @@ public class start_screen extends AppCompatActivity {
 
         Handler handler=new Handler();
         handler.postDelayed(() -> {
-            Intent intent = new Intent(start_screen.this, MainActivity.class);
+            Intent intent = new Intent(start_screen.this, dose_option.class);
             startActivity(intent);
         },800);
     }
